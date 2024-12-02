@@ -17,3 +17,12 @@ Things I learned:
 
 - The [`Fields`](https://pkg.go.dev/strings#Fields) function in the strings package is handy for splitting strings on arbitrary whitespace.
 - Rewinding a file can be done with `Seek(0, io.SeekStart)`.
+
+## Day 2
+
+Conceptually simple. The implementation of part 1 was straightforward. Part 2 proved more tricky. The algorithm was simple, yet implementing it took a bit to understand better how the concept of slices is implemented and why the underlying array got modified.
+
+Things I learned:
+
+- [Go Slices: usage and internals](https://go.dev/blog/slices-intro).
+- When using `slices.Delete` a new slices is produced, but the underlying array gets modified. Therefore, necessary to copy the data.
