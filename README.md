@@ -26,3 +26,12 @@ Things I learned:
 
 - [Go Slices: usage and internals](https://go.dev/blog/slices-intro).
 - When using `slices.Delete` a new slices is produced, but the underlying array gets modified. Therefore, necessary to copy the data.
+
+## Day 3
+
+The first time this years that requires regular expressions. Conceptually the solution was straightforward for both parts. Spent most time figuring out regular expression syntax with subexpressions in Go.
+
+Things I learned:
+
+- Specifics of [regular expression syntax](https://pkg.go.dev/regexp/syntax).
+- Using `switch` as a more terse if-then-else syntax.
