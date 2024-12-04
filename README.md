@@ -35,3 +35,11 @@ Things I learned:
 
 - Specifics of [regular expression syntax](https://pkg.go.dev/regexp/syntax).
 - Using `switch` as a more terse if-then-else syntax.
+
+## Day 4
+
+Again not very difficult. For the first part, I doubted whether scanning the whole grid per direction (left to right, right to left, etc.) or invetigate per character. Decided for the latter.
+
+Things I learned:
+
+- Although I did not find it in the docs, Richard during our commute learned me you can use character literals, e.g. `'M'`.
