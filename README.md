@@ -43,3 +43,7 @@ Again not very difficult. For the first part, I doubted whether scanning the who
 Things I learned:
 
 - Although I did not find it in the docs, Richard during our commute learned me you can use character literals, e.g. `'M'`.
+
+## Day 5
+
+Luckily saw quickly that it's simpler to evaluate the list of rules, than trying to work out if the rules are applied from the list of updates. Made use of the `Index` function from the `slices` package which removed the need for looping. First time using a struct.
