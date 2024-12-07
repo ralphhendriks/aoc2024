@@ -47,3 +47,13 @@ Things I learned:
 ## Day 5
 
 Luckily saw quickly that it's simpler to evaluate the list of rules, than trying to work out if the rules are applied from the list of updates. Made use of the `Index` function from the `slices` package which removed the need for looping. First time using a struct.
+
+## Day 6
+
+Part 1 was quickly done. Part 2 took way more time than I'd like to admit. Finally, I figured out that I overlooked that multiple right turns can be made before advancing to the next position. I found this out only when looking for a hint and a Redditor suggested the following minimalistic test case:
+
+```
+###
+..#
+^##
+```
