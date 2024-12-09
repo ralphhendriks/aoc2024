@@ -61,3 +61,7 @@ Part 1 was quickly done. Part 2 took way more time than I'd like to admit. Final
 ## Day 7
 
 The first time with big numbers, so the first time using `int64`. The `strconv.ParseInt` method is a bit more cumbersome than `strconv.Atoi`, but that's only a minor annoyance. I implemented the concat operator for part 2 by going back to string representation, which feels a bit hacky, but it was the fastest day of getting it done as I did not find an int-only log10 implementation in the standard library.
+
+## Day 8
+
+Not difficult, but a bit quick and dirty solution. First time passing a function as an argument to swap out the antinode pattern/algorithm.
