@@ -65,3 +65,7 @@ The first time with big numbers, so the first time using `int64`. The `strconv.P
 ## Day 8
 
 Not difficult, but a bit quick and dirty solution. First time passing a function as an argument to swap out the antinode pattern/algorithm.
+
+## Day 9
+
+Conceptually, again, it was clear quite quickly how to approach. The second part took me a bit longer, as I initially did not realize that it is not necessary to add the moved files to the free blocks, as files with a lower ID cannot be moved there anyway. This simplified the approach considerably.
