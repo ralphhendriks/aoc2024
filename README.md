@@ -69,3 +69,11 @@ Not difficult, but a bit quick and dirty solution. First time passing a function
 ## Day 9
 
 Conceptually, again, it was clear quite quickly how to approach. The second part took me a bit longer, as I initially did not realize that it is not necessary to add the moved files to the free blocks, as files with a lower ID cannot be moved there anyway. This simplified the approach considerably.
+
+# Day 10
+
+Again, this wasn't a too difficult puzzle. The algorithm was immediately clear and it was a good opportunity to test a recursive algorithm in Go. This worked out to be a lucky choice, as the implementation already calculated all the trails needed for part 2. Allowed me to experiment passing an anonymous function just for the sake of it.
+
+Things I learned: 
+
+- When appending two slices, the syntax `append(slice, anotherSlice...)` must literally include the ellipsis `...`. This is a special syntax for [variadic functions](https://gobyexample.com/variadic-functions) if there are already multiple arguments in a slice.
