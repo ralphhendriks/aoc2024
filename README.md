@@ -81,3 +81,12 @@ Things I learned:
 ## Day 11
 
 This took a while to figure it out. Tried a recursive approach, also with a cache/memoization on the side, but it blew up. Finally an iterative solution while keeping a histogram of the stone numbers proved a performant and simple option.
+
+## Day 12
+
+This was the most challenging and the most fun puzzle so far, also resulting in the longest Go program.
+
+Things I learned:
+
+- The algorithm needed to solve this is related to an area of computer science called [Connected-component labeling (CCL)](https://en.wikipedia.org/wiki/Connected-component_labeling).
+- There are 1-pass and 2-pass algorithms described for this class of problems. I spent some time reading about the _H_oshen-Kopelman algorithm_ (see [here](https://en.wikipedia.org/wiki/Hoshen%E2%80%93Kopelman_algorithm) and [here](https://www.ocf.berkeley.edu/~fricke/projects/hoshenkopelman/hoshenkopelman.html)). Eventually, I opted for a simpler approach with a 1-pass algorithm.
