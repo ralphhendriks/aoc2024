@@ -99,3 +99,15 @@ Things I learned:
 
 - Basic linear algebra refresher.
 - I somehow missed that the shorthand notation for defining variables  of the same type also works for function parameters, e.g. `func foo(a, b int)`.
+
+## Day 15
+
+This was a challenging day. Part 2 took a lot of time to complete. For the second part, I initially took an approach to evaluate the width of the two boxes at once. This proved too difficult. Eventually, I arrived at the following two-step algorithm that works both for part 1 and part 2:
+
+- Construct a queue of positions to check. As soon the head of the queue is unmovable, the whole move operation cannot happen.
+- Add every checked position to a list of positions to move.
+- Move the items to move, starting from the back. It is necessary to keep a map to track the nodes already moved, because the can-move-detection can find doubles. This is only necessary for the up/down moves.
+
+Things I learned:
+
+- I initially experimented with transforming the moves to an enum. I learned about the iota keyword, and experimented using the `fmt.Stringer` interface.
