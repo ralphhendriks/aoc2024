@@ -111,3 +111,12 @@ This was a challenging day. Part 2 took a lot of time to complete. For the secon
 Things I learned:
 
 - I initially experimented with transforming the moves to an enum. I learned about the iota keyword, and experimented using the `fmt.Stringer` interface.
+
+## Day 16
+
+The yearly implementation of Dijkstra 😀.  I started with a recursive path tracking algorithm but this blew up with the full input. This day required me to write a bit more involved Go program than so far in the Advent of Code. Although conceptually not very difficult, this day proved quite demanding implementation-wise, in particular because I struggled understanding the implementation of the priority queue based on the heap standard package.
+
+Things I learned:
+
+- Using (or better: emulating) enums.
+- Implementing priority queue based on heap standard package.
